@@ -3,7 +3,6 @@
 body {
     height: 100%;
     width: 100%;
-    overflow: hidden;
     background-color: #fff;
     font-family: "Quicksand", sans-serif;
     overflow: hidden;
@@ -11,14 +10,14 @@ body {
 
 .q-container{
     height: 100vh;
-    padding: 80px;
+    padding: 5%;
 }
 
 .question{
     padding: 20px;
     background-color: rgb(255, 255, 255, 0.3);
     border-radius: 5px;
-    width: 100%;
+    
 }
 
 .question span {
@@ -31,8 +30,7 @@ body {
     padding: 20px;
     background-color: rgb(255, 255, 255, 0.3);
     border-radius: 5px;
-    width: 100%;
-    height: 400px;
+    height: 45%;
     margin-top: 20px;
     overflow: auto;
 }
@@ -71,7 +69,7 @@ body {
 
 .footer{
     position: absolute;
-    bottom: 80px;
+    bottom: 10%;
     display: flex;
     flex-direction: row;
     width: 88%;

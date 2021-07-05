@@ -51,13 +51,13 @@ function Questionpage({ question }) {
             </div>
             <div className="footer">
                 <div style={{ width: '25%' }}>
-                    <button className="btn" style={{ backgroundColor: '#ee5253' }} onClick={prev}>Back</button>
+                    <button className="btn" style={{ backgroundColor: '#ee5253' }} onClick={prev}>Kembali</button>
                 </div>
                 <div style={{ width: '50%' }}>
 
                 </div>
                 <div style={{ width: '25%' }}>
-                    <button className="btn" style={{ backgroundColor: '#54a0ff', float: 'right' }} onClick={next}>Next</button>
+                    <button className="btn" style={{ backgroundColor: '#54a0ff', float: 'right' }} onClick={next}>Selanjutnya</button>
                 </div>
             </div>
         </div>
