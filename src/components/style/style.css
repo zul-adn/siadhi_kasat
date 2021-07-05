@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    font-family: "Quicksand", sans-serif;
+    overflow: hidden;
+}
+
+.q-container{
+    height: 100vh;
+    padding: 80px;
+}
+
+.question{
+    padding: 20px;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.question span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.option{
+    padding: 20px;
+    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+/* width */
+    .option::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  .option::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .option::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .option::-webkit-scrollbar-thumb:hover {
+    background: #222f3e; 
+  }
+
+.option div{
+    color: #fff;
+    padding: 20px;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    width: 88%;
+}
+
+.btn {
+    width: 150px;
+    padding: 15px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+
+
+
