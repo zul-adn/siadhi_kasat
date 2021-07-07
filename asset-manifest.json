@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/siadhi_kasat/static/css/main.9206a51c.chunk.css",
+    "main.js": "/siadhi_kasat/static/js/main.e375b166.chunk.js",
+    "main.js.map": "/siadhi_kasat/static/js/main.e375b166.chunk.js.map",
+    "runtime-main.js": "/siadhi_kasat/static/js/runtime-main.ce8172f6.js",
+    "runtime-main.js.map": "/siadhi_kasat/static/js/runtime-main.ce8172f6.js.map",
+    "static/js/2.d53b548c.chunk.js": "/siadhi_kasat/static/js/2.d53b548c.chunk.js",
+    "static/js/2.d53b548c.chunk.js.map": "/siadhi_kasat/static/js/2.d53b548c.chunk.js.map",
+    "static/js/3.a07a308e.chunk.js": "/siadhi_kasat/static/js/3.a07a308e.chunk.js",
+    "static/js/3.a07a308e.chunk.js.map": "/siadhi_kasat/static/js/3.a07a308e.chunk.js.map",
+    "index.html": "/siadhi_kasat/index.html",
+    "static/css/main.9206a51c.chunk.css.map": "/siadhi_kasat/static/css/main.9206a51c.chunk.css.map",
+    "static/js/2.d53b548c.chunk.js.LICENSE.txt": "/siadhi_kasat/static/js/2.d53b548c.chunk.js.LICENSE.txt",
+    "static/media/002-speech bubble.0b9db525.svg": "/siadhi_kasat/static/media/002-speech bubble.0b9db525.svg",
+    "static/media/009-tv app.fcefc63a.svg": "/siadhi_kasat/static/media/009-tv app.fcefc63a.svg",
+    "static/media/012-daily health app.62a35713.svg": "/siadhi_kasat/static/media/012-daily health app.62a35713.svg",
+    "static/media/016-stock exchange app.8eed351e.svg": "/siadhi_kasat/static/media/016-stock exchange app.8eed351e.svg",
+    "static/media/017-web browser.0e0bef72.svg": "/siadhi_kasat/static/media/017-web browser.0e0bef72.svg",
+    "static/media/026-tips.721760dd.svg": "/siadhi_kasat/static/media/026-tips.721760dd.svg",
+    "static/media/029-find my gadget app.469a6447.svg": "/siadhi_kasat/static/media/029-find my gadget app.469a6447.svg",
+    "static/media/037-bank.2ae0616e.svg": "/siadhi_kasat/static/media/037-bank.2ae0616e.svg",
+    "static/media/069-linkedin.8196bdf1.svg": "/siadhi_kasat/static/media/069-linkedin.8196bdf1.svg",
+    "static/media/logo.6ce24c58.svg": "/siadhi_kasat/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ce8172f6.js",
+    "static/js/2.d53b548c.chunk.js",
+    "static/css/main.9206a51c.chunk.css",
+    "static/js/main.e375b166.chunk.js"
+  ]
+}
