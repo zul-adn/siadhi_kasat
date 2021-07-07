@@ -8,7 +8,7 @@ function Rootapp() {
         <div>
             {!isDesktop ?
                 <div style={{  height: '100vh', display:'flex', justifyContent:'center', flexDirection:'column', alignItems:'center', padding: 80, textAlign:'center'}}>
-                    <img src='https://image.flaticon.com/icons/png/512/2659/2659980.png' style={{ width:'50%', marginBottom:100 }} />
+                    <img src='https://image.flaticon.com/icons/png/512/2659/2659980.png' style={{ width:'50%', marginBottom:'20%' }} />
                     Mohon Maaf, untuk sementara Siadhi hanya support untuk penggunaan berbasis dekstop, Terima Kasih
                 </div>
                 :
