@@ -2,6 +2,8 @@ import axios from 'axios'
 
 const storeDatas = (payload) => ({ type : 'STORE_DATAS', datas: payload }) 
 const storeDatasDetail = (payload) => ({type: 'STORE_DATAS_DETAIL', datas: payload})
+export const setMainButtonTriGatra = () => ({type: 'MAIN_BUTTON_TRIGATRA'})
+export const setMainButtonPancaGatra = () => ({type: 'MAIN_BUTTON_PANCAGATRA'})
 export const resetDetails = () => ({ type: 'RESET_DETAIL' }) 
 
 export const getAllDatas = () => {

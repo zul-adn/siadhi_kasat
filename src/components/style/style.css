@@ -10,14 +10,183 @@ body {
 
 .q-container{
     height: 100vh;
-    padding: 5%;
+    padding: 2%;
+    background-image:linear-gradient(to bottom, rgb(116, 185, 255, 0.9), rgb(9, 132, 227, 1)),url('https://www.wallpapertip.com/wmimgs/124-1249648_police-hd.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+/* DEKSTOP */
+
+@media (min-width: 1025px) {
+
+    .question{
+
+        padding: 20px;
+        background-color: rgb(255, 255, 255, 0.3);
+        border-radius: 5px;
+        z-index: 200;
+    }
+
+    .question span {
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .option{
+        padding: 20px;
+        background-color: rgb(255, 255, 255, 0.3);
+        border-radius: 10px;
+        height: 65%;
+        margin-top: 20px;
+        overflow: auto;
+        z-index: 2;
+    }
+
+    /* width */
+        .option::-webkit-scrollbar {
+        width: 20px;
+    }
+    
+    /* Track */
+    .option::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 5px;
+    }
+    
+    /* Handle */
+    .option::-webkit-scrollbar-thumb {
+        background: black; 
+        border-radius: 5px;
+    }
+    
+    /* Handle on hover */
+    .option::-webkit-scrollbar-thumb:hover {
+        background: #222f3e; 
+    }
+
+    .option div{
+        color: #fff;
+        padding: 20px;
+        background-color: rgb(0, 0, 0, 0.5);
+        border-radius: 1px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+
+    .footer{
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8vw, 1fr));
+        column-gap: 10px;
+        row-gap: 15px;
+        margin-top: 2vh;
+        transition: linear 0.5s;
+        bottom: -300px;
+    }
+
+    .footer div{
+        padding: 5px;
+        margin-top: 5%;
+    }
+
+    .btn {
+        width: 100%;
+        aspect-ratio: 1;
+        background-color: rgb(255, 255, 255, 0.3);
+        padding: 15px;
+        font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 10px;
+        border: 0px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: linear 0.1s;
+    }
+
+    .btn:hover{
+        transform: scale(1.05);
+        background-color: rgb(255, 255, 255, 0.6);
+    }
+
+    .btn img{
+        width: 50%;
+    }
+
+    .btn span{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .footer2{
+        position: absolute;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        justify-content: flex-end;
+        margin-top: 2vh;
+        transition: linear 0.5s;
+        bottom: 20px;
+        right: 30px;
+    }
+
+    .footer2 div{
+        padding: 5px;
+        margin-top: 5%;
+    }
+
+    .btn2 {
+        width: 95%;
+        aspect-ratio: 1;
+        background-color: rgb(255, 255, 255, 0.3);
+        padding: 15px;
+        font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 10px;
+        border: 0px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: linear 0.1s;
+    }
+
+    .btn2:hover{
+        transform: scale(1.05);
+        background-color: rgb(255, 255, 255, 0.6);
+    }
+
+    .btn2 img{
+        width: 50%;
+    }
+
+    .btn2 span{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
+
+
+/* TABLET */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+
 .question{
+
     padding: 20px;
     background-color: rgb(255, 255, 255, 0.3);
     border-radius: 5px;
-    
+    z-index: 200;
 }
 
 .question span {
@@ -29,10 +198,11 @@ body {
 .option{
     padding: 20px;
     background-color: rgb(255, 255, 255, 0.3);
-    border-radius: 5px;
-    height: 48%;
+    border-radius: 10px;
+    height: 60%;
     margin-top: 20px;
     overflow: auto;
+    z-index: 2;
 }
 
 /* width */
@@ -61,22 +231,34 @@ body {
     color: #fff;
     padding: 20px;
     background-color: rgb(0, 0, 0, 0.5);
-    border-radius: 10px;
+    border-radius: 1px;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .footer{
-    position: absolute;
-    bottom: 5%;
-    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13vw, 1fr));
+    column-gap: 15px;
+    margin-top: 2vh;
+    /* display: flex;
     flex-direction: row;
-    width: 88%;
+    justify-content: center;
+    align-items: center; */
+}
+
+.footer div{
+    /* width: 95%; */
+    padding: 5px;
+    margin-top: 5%;
 }
 
 .btn {
-    width: 150px;
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: rgb(255, 255, 255, 0.3);
     padding: 15px;
     font-size: 18px;
     color: #fff;
@@ -84,75 +266,21 @@ body {
     border-radius: 10px;
     border: 0px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes move_wave {
-    0% {
-        transform: translateX(0) translateZ(0) scaleY(1)
-    }
-    50% {
-        transform: translateX(-25%) translateZ(0) scaleY(0.55)
-    }
-    100% {
-        transform: translateX(-50%) translateZ(0) scaleY(1)
-    }
+.btn img{
+    width: 50%;
 }
-.waveWrapper {
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    z-index: -1;
+
+.btn span{
+    font-size: 12px;
+    margin-top: 10px;
 }
-.waveWrapperInner {
-    position: absolute;
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
-    bottom: -1px;
-    background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
 }
-.bgTop {
-    z-index: 15;
-    opacity: 0.5;
-}
-.bgMiddle {
-    z-index: 10;
-    opacity: 0.75;
-}
-.bgBottom {
-    z-index: 5;
-}
-.wave {
-    position: absolute;
-    left: 0;
-    width: 200%;
-    height: 100%;
-    background-repeat: repeat no-repeat;
-    background-position: 0 bottom;
-    transform-origin: center bottom;
-}
-.waveTop {
-    background-size: 50% 100px;
-}
-.waveAnimation .waveTop {
-  animation: move-wave 3s;
-   -webkit-animation: move-wave 3s;
-   -webkit-animation-delay: 1s;
-   animation-delay: 1s;
-}
-.waveMiddle {
-    background-size: 50% 120px;
-}
-.waveAnimation .waveMiddle {
-    animation: move_wave 10s linear infinite;
-}
-.waveBottom {
-    background-size: 50% 100px;
-}
-.waveAnimation .waveBottom {
-    animation: move_wave 15s linear infinite;
-}
+
+
+

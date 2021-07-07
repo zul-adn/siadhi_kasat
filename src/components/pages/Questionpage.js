@@ -1,8 +1,12 @@
 import React from 'react';
 import { connect } from "react-redux";
-import './../style/style.css'
+import './../style/style.css';
+import {
+    setMainButtonPancaGatra,
+    setMainButtonTriGatra
+} from '../../store/app/action';
 
-function Questionpage({ question }) {
+function Questionpage({ question, button_all, button_init, setMainButtonPancaGatra, setMainButtonTriGatra, isTrigatra, button_main_trigatra, button_main_pancagatra }) {
     const [i, setI] = React.useState(0)
     const [color, setColor] = React.useState('#f368e0')
 
@@ -26,53 +30,88 @@ function Questionpage({ question }) {
         }
     }
 
+    const getDetail = (jenis) => {
+        if (jenis === 'Trigatra') {
+            setMainButtonTriGatra()
+        } else {
+            setMainButtonPancaGatra()
+        }
+
+        document.querySelector('.footer').style.bottom = '-300px'
+
+
+        document.querySelector('.footer').style.bottom = '20px'
+
+
+    }
+
     return (
         <div className="q-container" >
-
-            <div className="waveWrapper waveAnimation">
-                <div className="waveWrapperInner bgTop">
-                    <div className="wave waveTop" style={{backgroundImage: "url('http://front-end-noobs.com/jecko/img/wave-top.png')"}}></div>
-                </div>
-                <div className="waveWrapperInner bgMiddle">
-                    <div className="wave waveMiddle" style={{backgroundImage: "url('http://front-end-noobs.com/jecko/img/wave-mid.png')"}}></div>
-                </div>
-                <div className="waveWrapperInner bgBottom">
-                    <div className="wave waveBottom" style={{backgroundImage: "url('http://front-end-noobs.com/jecko/img/wave-bot.png')"}}></div>
-                </div>
-            </div>
-
-            <div className="question">
-                <span>{question[i].q}</span>
-            </div>
             <div className="option">
-                {question[i].o.map((opt, i) =>
+                {/* {question[i].o.map((opt, i) =>
                     <div>{opt.o}</div>
-                )}
+                )} */}
             </div>
-            <div className="footer">
-                <div style={{ width: '25%' }}>
-                    <button className="btn" style={{ backgroundColor: '#ee5253' }} onClick={prev}>Kembali</button>
-                </div>
-                <div style={{ width: '50%' }}>
+            <div className="footer2">
+                {
+                    button_init.map((data, i) =>
+                        <div>
+                            <div className="btn2" onClick={() => getDetail(data.name)}>
+                                <img src={data.icon} />
+                                <span>{data.name}</span>
+                            </div>
+                        </div>
+                    )
+                }
+            </div>
 
-                </div>
-                <div style={{ width: '25%' }}>
-                    <button className="btn" style={{ backgroundColor: '#54a0ff', float: 'right' }} onClick={next}>Selanjutnya</button>
-                </div>
+
+
+            <div className="footer" style={{ width: isTrigatra ? "31%" : "52%" }}>
+
+                {
+                    isTrigatra ?
+                        button_main_trigatra.map((data, i) =>
+                            <div>
+                                <div className="btn2" >
+                                    <img src={data.icon} />
+                                    <span>{data.name}</span>
+                                </div>
+                            </div>
+                        )
+                        :
+                        button_main_pancagatra.map((data, i) =>
+                            <div>
+                                <div className="btn2" >
+                                    <img src={data.icon} />
+                                    <span>{data.name}</span>
+                                </div>
+                            </div>
+                        )
+
+                }
             </div>
+
         </div>
     )
 }
 
 const mapStateToProps = ({ app }) => {
     return {
-        question: app.question
+        question: app.question,
+        button_init: app.button_init,
+        button_main_trigatra: app.button_main_trigatra,
+        button_main_pancagatra: app.button_main_pancagatra,
+        isTrigatra: app.isTrigatra,
+        isPancaGatra: app.isPancaGatra,
+
     }
 }
 
 const mapDispatchToProps = dispatch => {
     return {
-
+        setMainButtonPancaGatra: () => dispatch(setMainButtonPancaGatra()),
+        setMainButtonTriGatra: () => dispatch(setMainButtonTriGatra())
     }
 };
 
